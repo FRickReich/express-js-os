@@ -1,10 +1,12 @@
-function component() {
-    const element = document.createElement('div');
+// function component() {
+//     const element = document.createElement('div');
 
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = 'Hello World!!!';
+//     // Lodash, currently included via a script, is required for this line to work
+//     element.innerHTML = 'Hello Worl!d!!';
 
-    return element;
-}
+//     return element;
+// }
 
-document.body.appendChild(component());
+// document.getElementById('app').append(component());
+
+console.log(document.getElementById('app'));

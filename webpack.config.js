@@ -1,5 +1,4 @@
 const path = require('path');
-const NodemonPlugin = require('nodemon-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -8,8 +7,5 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'static'),
     },
-    plugins: [
-        new NodemonPlugin(), // Dong
-        new HtmlWebpackPlugin(),
-    ],
+    plugins: [new HtmlWebpackPlugin()],
 };

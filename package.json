@@ -4,8 +4,8 @@
     "private": true,
     "scripts": {
         "start": "node index.js",
-        "start:dev": "concurrently \"npm run watch:js\" \"npm run watch:sass\"",
-        "watch:js": "webpack --watch",
+        "start:dev": "concurrently \"npm run watch:js\" \"webpack --watch\" \"npm run watch:sass\"",
+        "watch:js": "nodemon index.js",
         "watch:sass": "sass --no-source-map --watch src/themes:static/themes",
         "build": ""
     },
